@@ -1,0 +1,72 @@
+div#topline
+{
+    background-image: url("russian-embroidery.jpg");
+    background-size: 150px;
+}
+
+
+h1
+{
+    color: white;
+    font-size: 35px;
+    font-family: "Baskerville Old Face", serif;
+}
+
+
+div#ing-header
+{
+    color: lightsalmon;
+    font-size: large;
+    font-style: oblique;
+    text-decoration-line: underline;
+}
+
+
+img
+{
+    border: 2px solid #000;
+    margin-right: 5px;
+}
+
+
+div.ing-content
+{
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+body
+{
+    background-image: url("russian salad for background.jpg") ;
+    background-size: 1550px;
+    width: 1528px;
+    height: 630px;
+    size: auto;
+}
+
+
+div#inst-header
+{
+    color: lightsalmon;
+    font-size: large;
+    font-style: oblique;
+    text-decoration-line: underline;
+}
+
+
+div.inst-content
+{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+div#bottomline
+{
+    background-image: url("russian-embroidery.jpg");
+    background-size: 150px;
+}

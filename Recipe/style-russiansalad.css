@@ -1,6 +1,6 @@
 div#topline
 {
-    background-image: url("russian-embroidery.jpg");
+    background-image: url("russian_embroidery.jpg");
     background-size: 150px;
 }
 
@@ -39,7 +39,7 @@ div.ing-content
 
 body
 {
-    background-image: url("russian salad for background.jpg") ;
+    background-image: url("russian_salad_background.jpg") ;
     background-size: 1550px;
     width: 1528px;
     height: 630px;
@@ -67,6 +67,6 @@ div.inst-content
 
 div#bottomline
 {
-    background-image: url("russian-embroidery.jpg");
+    background-image: url("russian_embroidery.jpg");
     background-size: 150px;
 }

@@ -69,4 +69,3 @@ for x in digit_list:
 
 print("Count of the even digits: ", even_count)
 print("Count of the odd digits : ", odd_count)
-

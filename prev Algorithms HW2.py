@@ -13,6 +13,7 @@ def split_half(string):
     rightpart = string[halfpart+additional:]
     return rightpart+leftpart
 
+
 example='bbbbbcaaaaa'
 print(split_half(example))
 

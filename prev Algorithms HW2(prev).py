@@ -7,11 +7,12 @@ def split_half(string):
     length = len(string)
     halfpart = length // 2
     additional = 0
-    if length % 2:
+   if length % 2:
         additional=1
     leftpart = string[:halfpart+additional]
     rightpart = string[halfpart+additional:]
     return rightpart+leftpart
+
 
 example='bbbbbcaaaaa'
 print(split_half(example))

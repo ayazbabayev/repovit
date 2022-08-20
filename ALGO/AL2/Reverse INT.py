@@ -23,8 +23,10 @@ print(str[::])              # America (straight)
 print(str[::-1])            # aciremA (reverse)
 print(str[len(str)//2])     # r       (MIDDLE)
 print(str[1::])             # merica  (from 2nd value)
-print(str[:2:])             # Am      (1st 2 letters)
+print(str[:2])             # Am      (1st 2 letters)
 print(str[1::-1])           # mA      (1st 2 letters but reverse)
 
-
+test_list = [1,2,3,4,5,6]
+print(test_list[::3])       # jumps to every 2nd number
+# test_list[starting_index:end index: step]
 

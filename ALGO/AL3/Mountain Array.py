@@ -22,7 +22,6 @@ def is_mountain_array(mountain_list):
 
     if i==len(mountain_list):
         return True
-
     return False
 
 test_neg=[3,5,5]   # FALSE

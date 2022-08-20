@@ -8,21 +8,18 @@
 def below_ari_mean(nums):
     ari_mean = sum(nums) / len(nums)
     blank_list = []
-    i = 0                                    # ? is "i=0" as value
-    while i < len(nums):                     # ? Why do we need this?
-        if nums[i] < ari_mean:               # i is index
+    i = 0                               # 1st Iteration : i = 0.   2nd Interation: i = 1
+    while i < len(nums):
+        if nums[i] < ari_mean:
             blank_list.append(nums[i])
-        i += 1   # ? If we have append above, what is the role of this?
+        i += 1
 
     return blank_list
 
-# 1st Iteration : i =0
-# 2nd Interation: i=1
 
 testlist = [1, 3, 5, 6, 4, 10, 2, 3]
 blank_list = below_ari_mean(testlist)
 print(blank_list)
-
 
 
 # 2. Two Lowest Elements
@@ -34,13 +31,6 @@ def lowest_2_elements(elements):
     elements.sort()
     return elements[:2]
 
+
 lista = [198, 3, 4, 9, 10, 9, 2]
 print(lowest_2_elements(lista))
-
-
-# test_list = [198, 3, 4, 9, 10, 9, 2]
-# test_list.sort()
-# blank_list = []
-# blank_list.append(test_list[:2:])
-
-# Could we sort the list, then create another list and append the lowest two to there?

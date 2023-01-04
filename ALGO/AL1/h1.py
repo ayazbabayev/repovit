@@ -1,7 +1,7 @@
 # 1. COMPUTE THE SUM OF DIGITS IN ALL NUMBERS FROM 1 to N.
 # When a user enters a number n, find the sum of digits in all numbers from 1 to n.
 # Example: n = 5. Result = 1+2+3+4+5 = 15.
-
+# sum nums / sum digits / sum all nums / sum all digits
 def sum_of_numbers(n):
     result = 0
     if n != 0:

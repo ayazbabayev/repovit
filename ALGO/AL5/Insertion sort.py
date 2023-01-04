@@ -11,7 +11,7 @@
 
 def insertion_sort(list):
     for i in range(1, len(list)):                   # first card - index 0 - was sorted: "2". So we begin with 2nd card -index 1- which is "1".
-        key = list[i]                               # key = "1".             any element in list ? all elements in list?
+        key = list[i]                               # key = "1". All eles in list from index 1 to end.
         p = i - 1                                   # "2"
 
         while p >= 0 and key < list[p]:             # while 2 >= 0 and 1 < 2's index (value 2)

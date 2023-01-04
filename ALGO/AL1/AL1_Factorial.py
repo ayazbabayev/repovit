@@ -3,7 +3,7 @@
 #o(n)
 def factorial(n):
     result = 1
-    for i in range(1, n+1): #we go through all elements from i to n+1. for variable in range between 1 and n (and the last value so +1)
+    for i in range(1, n+1): #we go through all elements from i to n+1. for variable in range between 1 and n (we include the last value so +1 to make last value count)
         result = result * i
     print(result)
 

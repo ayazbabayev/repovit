@@ -8,21 +8,16 @@ string_list = ['A', 'B', 'C']
 
 result_list= list_no1 + list_no2
 print(result_list)
-
-
 ########################################################################################################################
 # 2/11: INDEX in list starts with 0.
 print(result_list[1])   # 1 is second number, "2" in list.
 print(result_list[-1])  # -1 is last number, "6" in list.
-
-
 ########################################################################################################################
 # 3/11: APPEND into list...to END of the list!
 string_list.append('W')
 print(string_list)
-
-
 ########################################################################################################################
+
 # 4/11: REMOVE ALL ELEMENTS from list.
 list_no1 = [1,2,3]
 list_no1.clear()
@@ -56,7 +51,7 @@ print('INSERT VALUE by INDEX in the list (index, value): ', list)
 
 ########################################################################################################################
 # 8/11: REMOVE by INDEX:
-list = [1, 2, 3, 4, 5, 6, 7]
+list = [1, 2,2,2,2, 3, 4, 5, 6, 7]
 list.pop(0)     # Removed index 0 which is "1" from list.
 print('REMOVE by INDEX: ', list)
 
@@ -80,3 +75,20 @@ print('REVERSE the list: ', list)
 unsorted_list = [1, 3, 6, 2, 4, 7, 5]
 unsorted_list.sort()
 print('SORT the unsorted list: ', unsorted_list)
+
+########################################################################################################################
+# COMPARE APPEND vs INSERT:
+    # Append adds from beginning to end:    list.append(i)
+    # Insert adds from end to beginning:    list.insert(0, i)
+
+def func(x):
+    list_app = []
+    list_ins = []
+    for i in x:
+        list_app.append(i)
+        list_ins.insert(0,i)
+    return 'a',list_app,'i',list_ins
+
+test = '12345'
+result = func(test)
+print(result)

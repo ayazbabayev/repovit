@@ -5,7 +5,7 @@ def solution(S):
     #     V = 5
     # if S == "111101010111":
     #     V = 22
-    V = int(S, 2) # --> 0,1
+    V = int(S, 2) # --> TILL 0,1
     no = 0
 
     while V > 0:

@@ -102,10 +102,24 @@ print(unique4(string4))
 # str = "Amazon", it should return "m"
 
 def uniq(x):
-    x=x.lower()
-    for char in x:
-        if x.count(char)==1:
-            return char
+    string=x.lower()
+    dct={}
+    for lett in string:
+        if lett not in dct:
+            dct[lett] =1
+        else:
+            dct[lett]+=1
+    kmax=''
+    vmax=0
+    for k,v in dct.items():
+        if v>vmax:
+            vmax=v
+            kmax=k
+    return kmax, vmax
 
 
-print(uniq(x='Volksvagen'))
+
+
+x='ALABALA'
+print(uniq(x))
+

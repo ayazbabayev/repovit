@@ -58,11 +58,11 @@ print(str.lower())
 
 ########################################################################################################################
 
-# 8. SPLIT: Splits string into *LIST* of items.
+# 8. SPLIT: Splits *STRING* into *LIST* of items.
 print('\n8.__________________________________________________')
 str8= "This is a string"
-all_words1 = str8.split('s')     # ('s') splits by s       # ['Thi', ' i', ' a ', 'tring']
-all_words = str8.split(' ')     # (' ') splits by space   # ['This', 'is', 'a', 'string']
+all_words1 = str8.split('s')      # ('s') splits by s       # ['Thi', ' i', ' a ', 'tring']
+all_words = str8.split(' ') # !!! # (' ') splits by space   # ['This', 'is', 'a', 'string']
 
 print('all_words : ',all_words)
 print('all_words1: ',all_words1)
@@ -70,13 +70,22 @@ print('all_words1: ',all_words1)
 for word in all_words:          # Thi /  i / a / tring
     print(word)
 
-# 9. JOIN: Joins list items into a string.
+# 9. JOIN: Joins *LIST* items into a *STRING*.
 print('\n9.__________________________________________________')
 list_of_words=['This','is','a','string']
 joined_str= ''.join(list_of_words)                        # Thisisastring
 print(joined_str)
 
-# 10. REPLACE: replacing value or character with another.
+# 10. SET: Set counts unique strings. abcde is 5 here.
+print('\n10._________________________________________________')
+
+string = 'aaabcde' # print(len(string)) --> 7.
+set_for_string = set(string)
+print(set_for_string)
+# {'d', 'a', 'e', 'b', 'c'}
+# print(len(set_for_string))    # 5
+
+# 11. REPLACE: replacing value or character with another.
 print('\n11._________________________________________________')
 str11= "This is a string"
 replace_func = str11.replace('s', '$')
@@ -84,26 +93,26 @@ print(replace_func)
 
 ########################################################################################################################
 
-# 11. STRIP: Removes blanks & periods in START & END.
-print('\n10._________________________________________________')
+# 12. STRIP: Removes blanks & periods in START & END.
+print('\n12._________________________________________________')
 str10= '    ...This.is.a.string...    '
 
 strip_func = str10.strip()
-print(str10)        #BEFORE w/ spaces '   ...This.is.a.string...   '
-print(strip_func)   #AFTER w/o spaces '...This.is.a.string...'
+print('before: ', str10)        #BEFORE w/ spaces '   ...This.is.a.string...   '
+print('after : ',strip_func)   #AFTER w/o spaces '...This.is.a.string...'
 #Other example:
 strip_func2 = str10.strip().strip(".")      # NO DOTS: 'This.is.a.string'
-print(strip_func2)
+print('other : ',strip_func2)
 
-# 12. FIND: Returns the index of the 1st occurence of the string passed as the argument.
-print('\n12._________________________________________________')
+# 13. FIND: Returns the index of the 1st occurence of the string passed as the argument.
+print('\n13._________________________________________________')
 # If not found, it turns -1.
 
 city_name = "Baku"
 print(city_name.find('k'))  # Prints k as 2 > (B:0 A:1 K:2 U:3)
 
-# 13. FORMAT:
-print('\n13._________________________________________________')
+# 14. FORMAT:
+print('\n14._________________________________________________')
 str13= "This is string {}"
 print(str13.format(13))
 print(str13.format('Thirteen'))

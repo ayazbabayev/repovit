@@ -68,7 +68,3 @@ def sum_values(d):
     return sum(d.values())
 
 print(sum_values(d))
-
-
-
-

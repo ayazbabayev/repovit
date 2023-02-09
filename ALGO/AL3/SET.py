@@ -1,12 +1,11 @@
 # GENERATING SET:
 
 sa = 'aaabcde'
-print(len(sa))
+print(len(sa))          # 7
 
 set_for_s = set(sa)
-print(set_for_s)
+print(set_for_s)        # {'d', 'c', 'a', 'e', 'b'}
 
 
-# SET WILL COUNT UNIQUE STRINGS. abcde is 5 here.
 
-# LENGTH OF THE STRING CAN BE DIFFERENT. 7.
+# LENGTH OF THE ORIGINAL STRING CAN BE DIFFERENT. ORIGINAL IS 7.

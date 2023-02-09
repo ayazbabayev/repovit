@@ -18,3 +18,14 @@ def move_zeros_to_end(arr):
 input = [0,4,0,3,1,2]
 output = move_zeros_to_end(input)
 print(output)
+
+
+def move(list):
+    for d in range(len(list)):
+        if list[d]==0:
+            list.pop(d)     #POP WORKS WITH INDEXES!
+            list.append(0)
+    return list
+
+list=[1,2,0,3,5,4,0,6]
+print(move(list))

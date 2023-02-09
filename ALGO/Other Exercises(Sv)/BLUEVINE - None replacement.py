@@ -89,3 +89,16 @@ print(removesmallest(list=[1,2,3,4,5]))
 
 ########################################################################################################################
 
+def prevreplace(x):
+    final = []
+    for val in range(len(x)):
+        if x[val]==None:
+            x[val]=x[val-1]
+            final.append(x[val])
+        else:
+            final.append((x[val]))
+
+    return final
+
+x = [7, None, 6, 5, None, None, 4, None]
+print(prevreplace(x))

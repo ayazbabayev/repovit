@@ -100,19 +100,6 @@ while x > 0:
 
 print('loop stopped: out of loop ')
 
-def countdown(a):
-    x = a
-    while x >= 1:
-        # print(x)
-        x -=1
-        if x == 10:
-            print('LAST 10 REMAINING:')
-            for i in range(x, 0, -1):   #from x till index 0 (*1*) by -1 step
-                print('i',i)
-
-countdown(50)
-
-
 # result = countdown(10) # result: only if you have return statement
 # print(result)
 
@@ -161,9 +148,9 @@ for i in range(len(lista)):         # outputs INDEXES
     print('index:i:', i)            # INDEXES 0/1/2/3 : print(i)
     print('values: ', lista[i])     # VALUES  w/x/y/z : list[i]
 
-print('for i in lista:  ')
+print('for v in lista:  ')
 for v in lista:                     # outputs VALUES
-    print('i:', v)                  # VALUES w/x/y/z : print(i)
+    print('v:', v)                  # VALUES w/x/y/z : print(i)
 ########################################################################################################################
 # EXTRACT VALUE FROM STRING:
 string = 'abc'

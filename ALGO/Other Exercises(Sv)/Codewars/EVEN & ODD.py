@@ -146,6 +146,7 @@ def evodder(x):
     return ev,od
 print(evodder(x=123456789))
 
+
 def evodder2(x):
     ev=[]
     od=[]
@@ -160,23 +161,26 @@ print(evodder2(x=123456789))
 
 
 ########################################################################################################################
-def find_min_num(num_div):
-    div_list=[]
-    no = num_div
+# def find_min_num(num_div):
+#     div_list=[]
+#     no = num_div
+#
+#     while num_div != 0:
+#
+#         num_div / no
+#         print(f'{num_div}/{no}:',num_div/no)
+#
+#         if num_div % no == 0:
+#             div_list.append(no)
+#             print('YES!')
+#             print(div_list)
+#
+#         no-=1
+#
+#     return len(div_list)
+#
+# num_div=12
+# print(find_min_num(num_div))
 
-    while num_div != 0:
 
-        num_div / no
-        print(f'{num_div}/{no}:',num_div/no)
 
-        if num_div % no == 0:
-            div_list.append(no)
-            print('YES!')
-            print(div_list)
-
-        no-=1
-
-    return len(div_list)
-
-num_div=12
-print(find_min_num(num_div))
